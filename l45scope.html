@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>scope</title>
+</head>
+<body>
+
+		<script type="text/javascript">
+
+			// global scope
+
+			const name="aung aung"
+				// name =" kyaw kyaw" // error
+				// const name ="su su"; //error
+				console.log(name);
+
+
+			let city = "mandalay";
+				// city = "yangon";	
+			// let city = "naypyitaw";
+				console.log(city);
+
+
+			var country = "Myanmar";
+				country = "yangon";
+			var country = "sirilanka";	
+
+			 console.log(country);
+
+
+			 // ----------------------------------------------------
+
+			 	// loop
+
+			 	// for(const x=0; x<10; x++){
+				//  	console.log(x); //0 ,error
+				// }
+
+			 	//function htal mr const
+
+				for(let b=0; b<10; b++){
+				 	console.log(b); //0 to 9
+				}
+
+				//console.log("b outside value is " ,b);  error
+				// global so let ka ma ya
+
+
+
+				// var ka every where
+				for(var d=0; d<10; d++){
+				 	console.log(d); //0 to 9
+				}
+				
+				console.log("d  " ,d);
+				// console.log("d outside value is " ,d);
+
+
+
+				const num1 = 0;
+				let num2 = 0;
+				var num3 = 0;
+
+				// for(num1; num1<10; num1++){
+				// 	console.log("loopingnum1 value by const = " ,num1); //0, error
+				// }
+
+				for(num2; num2<10; num2++){
+					console.log("loopingnum2 value by const = " ,num2); //0 to 9
+				}
+					console.log('num2 out side value = ',num2) //num2 out side value =  10
+
+				for(num3; num3<10; num3++){
+					console.log("loopingnum3 value by const = " ,num3); //0 to 9
+				}
+
+				console.log('num3 out side value = ',num3) //num3 out side value =  10
+
+
+				const num4 = 5;
+				let   num5 = 4;
+				var   num6 = 3;
+
+				// for( const num4=0; num4<10; num4++){
+				// 	console.log("loopingnum4 value by const = " ,num4); //0, error
+				// }
+					console.log('num4 out side value = ',num4) //num4 out side value =  10
+
+
+				for( let num5=0; num5<10; num5++){
+					console.log("loopingnum5 value by const = " ,num5); //0, error
+				}
+					console.log('num5 out side value = ',num5) //num2 out side value =  10
+
+				for( var num6=0; num6<10; num6++){
+					console.log("loopingnum6 value by const = " ,num6); //0, error
+				}
+					console.log('num6 out side value = ',num6) //num6 out side value =  10
+
+				//21sc
+				//--------------------------------------------------------
+
+
+				//object
+
+				const customers ={
+					fullname: " zayar kyaw",
+					age: 30,
+					phone: "0912345"
+				};
+
+				console.log(customers);
+				console.log(customers.fullname);	
+				console.log(customers.age);
+				console.log(customers.phone);
+
+				customers.city = "mandalay";
+				console.log(customers);
+
+
+				customers.fullname = "zayar win";
+				console.log(customers);
+
+
+				//  Error
+				// customers ={
+				// 	citizen : "Myanmar"
+				// };
+				// console.log(customers);
+
+				let members = {
+					fullname : "sue sue",
+					age: 20,
+					phone: "095789123"
+				}
+
+				console.log(members);
+				console.log(members.fullname);	
+
+				members.city ="mandalay"
+				console.log(members)
+
+				members.age ="12"
+				console.log(members)
+
+				members ={
+					citizen : "Myanmar"
+				};
+				console.log(members);
+				console.log(members);
+
+
+				var students = {
+					fullname : "zaw zaw",
+					age: 25,
+					phone: "09111113"
+				}
+
+				console.log(students);
+				console.log(students.fullname);	
+
+				students.city ="Bago"
+				console.log(members)
+
+				students.age ="18"
+				console.log(students)
+
+				students ={
+					citizen : "Myanmar"
+				};
+				console.log(students); //{citizen: 'Myanmar'}
+				console.log(students.city); //undefined
+
+
+				// ------------------------------------------------
+
+					// Array
+
+				const arrcolors =["blue","red","green"];
+				console.log(arrcolors);
+
+				arrcolors[0] = "violet";
+				console.log(arrcolors);
+
+				arrcolors[3] = "white";
+				console.log(arrcolors);
+
+				arrcolors.push("gold");
+				console.log(arrcolors);
+
+				//Error
+				//arrcolors=["black","grey"];
+				//console.log(arrcolors);
+
+	
+		</script>
+</body>
+</html>
